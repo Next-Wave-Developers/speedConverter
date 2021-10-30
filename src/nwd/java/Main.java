@@ -79,40 +79,14 @@ public class Main {
 
     public static void main(String[] args) {
         title();
-        printConversion(toMilesPerHour(1.5));
-        printConversion(toMilesPerHour(10.25));
-        printConversion(toMilesPerHour(-5.6));
-        printConversion(toMilesPerHour(25.42));
-        printConversion(toMilesPerHour(75.114));
     }
-
-
 
     /* write code here */
 
-    public static double toMilesPerHour(double kilometersPerHour) {
-
-        if (kilometersPerHour < 0) {
-            return -1;
-        } else {
-            return kilometersPerHour;
-        }
-    }
-
-    public static void printConversion(double kilometersPerHour) {
-
-        long milesPerHour = Math.round(kilometersPerHour * 0.621371);
-
-        if (kilometersPerHour < 0) {
-            System.out.println("Invalid Value");
-        } else {
-            System.out.println(kilometersPerHour + "km/h = " + milesPerHour + " mi/h");
-        }
-    }
 
 
     //not part of code
-    public static void title() {
+    public static void title(){
         System.out.println("        ,     \\    /      ,        \n" +
                 "       / \\    )\\__/(     / \\       \n" +
                 "      /   \\  (_\\  /_)   /   \\      \n" +
